@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
+
+    <!-- Styles -->
+    <link href="assets/css/page.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="TheSaaS">
+    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+    <meta property="og:url" content="http://thetheme.io/thesaas/">
+    <meta name="twitter:card" content="summary_large_image">
+
+      <!-- Start of Async Drift Code -->
+      <script>
+          "use strict";
+
+          !function() {
+              var t = window.driftt = window.drift = window.driftt || [];
+              if (!t.init) {
+                  if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                  t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+                          t.factory = function(e) {
+                              return function() {
+                                  var n = Array.prototype.slice.call(arguments);
+                                  return n.unshift(e), t.push(n), t;
+                              };
+                          }, t.methods.forEach(function(e) {
+                      t[e] = t.factory(e);
+                  }), t.load = function(t) {
+                      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                      var i = document.getElementsByTagName("script")[0];
+                      i.parentNode.insertBefore(o, i);
+                  };
+              }
+          }();
+          drift.SNIPPET_VERSION = '0.3.1';
+          drift.load('axxk8veuhxs8');
+      </script>
+      <!-- End of Async Drift Code -->
+  </head>
+
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+    <div class="container">
+
+      <div class="navbar-left">
+        <button class="navbar-toggler" type="button">&#9776;</button>
+        <a class="navbar-brand" href="#">
+          <img class="logo-dark" src="data:image/png;base64,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" alt="logo">
+          <img class="logo-light" src="data:image/png;base64,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" alt="logo">
+        </a>
+          <small class="beta-badge">beta</small>
+      </div>
+
+      <section class="navbar-mobile">
+        <nav class="nav nav-navbar nav-text-normal ml-auto">
+          <a class="nav-link" href="#section-features">Features</a>
+          <a class="nav-link" href="#section-pricing">Pricing</a>
+          <a class="nav-link" href="https://app.timeshake.io/calendar/tech-week-paris" target="_blank">Demo</a>
+        </nav>
+
+        <span class="navbar-divider"></span>
+
+        <div>
+          <a class="btn btn-round btn-sm btn-info ml-lg-4 mr-2" href="https://app.timeshake.io/users/signup">Create your calendar</a>
+          <a class="btn btn-round btn-sm btn-outline-info" href="https://app.timeshake.io/users/login">Sign in</a>
+
+        </div>
+      </section>
+
+    </div>
+  </nav><!-- /.navbar -->
+
+  <!-- Header -->
+  <header class="header home-header h-fullscreen pb-0">
+    <div class="container text-center">
+      <div class="row align-items-center h-100">
+        <div class="col-md-10 mx-auto">
+          <h1 class="fw-700">Online calendars</span> designed for <br/><span class="text-primary" data-typing="your audience^4000,  yoga studios, corporate events, intranets, training sessions, your audience^2000, fitness clubs, community events, city programs, school timetables, your audience^2000, conferences, alumni events, seminars, cultural programs, your audience^2000, sports games, associations, non-profits, e-commerce events"></span></h1>
+          <p class="lead-2 mt-5 mb-6">Timeshake is an <strong>online calendar builder</strong> : easily create and display engaging calendars and events <strong>on your website</strong>, or <strong>share a standalone link</strong> in your newsletters and social media. No coding needed.</p>
+          <p class="gap-xy">
+            <a class="btn btn-round btn-info mw-200" href="https://app.timeshake.io/users/signup">Create your calendar - For free</a>
+          </p>
+        </div>
+        <div class="mx-auto mt-7 align-self-end">
+          <img src="./assets/img/timeshake_yoga_studio.png" alt="img">
+        </div>
+
+      </div>
+    </div>
+  </header><!-- /.header -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Populate the page
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <section class="section py-7" style="background-image: linear-gradient(to right, #764ba2 0%, #f80759 100%);">
+        <div class="container text-center">
+          <div class="row gap-y align-items-center">
+
+            <div class="col-md-3 mx-auto">
+              <a class="btn btn-round btn-lg btn-light" target="_blank" href="https://app.timeshake.io/calendar/tech-week-paris">See it in action</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section overflow-hidden section-first section-feature">
+        <div class="container-fluid">
+          <div class="row gap-y align-items-center">
+
+            <div class="col-lg-5 mx-auto">
+              <h2 class="font-weight-700">Easily create calendars and events</h2>
+              <p class="lead mb-7">We provide a dead simple interface for generating calendars and adding events quickly. Build a long-lasting calendar, in minutes.</p>
+
+              <div class="row gap-y">
+
+                  <div class="media">
+                      <div class="lead-6 line-height-1 text-lighter w-70px"><i class="icon-genius text-info"></i></div>
+                      <div class="media-body">
+                          <h5>Repeating events</h5>
+                          <p>Create daily, weekly, montlhy events: perfect for recurring classes and weekly meetings.</p>
+                      </div>
+                  </div>
+
+                  <div class="media mt-4">
+                      <div class="lead-6 line-height-1 text-lighter w-70px"><i class="icon-calendar text-info"></i></div>
+                      <div class="media-body">
+                          <h5>3 different views</h5>
+                          <p>Choose from monthly, weekly or agenda view for your default display... Or keep them all.</p>
+                      </div>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 align-self-center order-md-first">
+              <img class="shadow-6" src="./assets/img/timeshake_create_event.png" alt="...">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section overflow-hidden section-feature">
+        <div class="container-fluid">
+          <div class="row gap-y align-items-center">
+
+            <div class="col-lg-5 align-self-center mx-auto">
+              <h2 class="font-weight-700">Share and embed anywhere</h2>
+              <p class="lead mb-7">Share a plain link in your newsletters or on social media. Or just copy paste one small snippet of code on your own website - or any platform. That's it !</p>
+
+              <div class="row gap-y">
+
+                <div class="col-md-6">
+                  <img src="../assets/img/shopify_logo.png" alt="..." class="logo-thumbnail">
+                </div>
+                <div class="col-md-6">
+                  <img src="../assets/img/squarespace_logo.png" alt="..." class="logo-thumbnail">
+                </div>
+
+                <div class="col-md-6">
+                  <img src="../assets/img/wordpress_logo.png" alt="..." class="logo-thumbnail">
+                </div>
+
+                <div class="col-md-6">
+                  <img src="../assets/img/wix_logo.png" alt="..." class="logo-thumbnail" style="height: 23px; ">
+                </div>
+
+                <div class="col-md-6">
+                  <img src="../assets/img/weebly_logo.png" alt="..." class="logo-thumbnail">
+                </div>
+
+                <div class="col-md-6">
+                  <img src="../assets/img/big_commerce_logo.png" alt="..." class="logo-thumbnail">
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 align-self-center">
+                <img class="shadow-6" src="./assets/img/timeshake_share_embed.png">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="section" id="section-features">
+        <div class="container">
+
+          <header class="section-header">
+            <small>Features</small>
+            <h2 class="font-weight-700">Calendars built to help you grow your business</h2>
+          </header>
+          <div class="row gap-y">
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-desktop text-primary"></i> <i class="fa fa-tablet text-primary"></i> <i class="fa fa-mobile text-primary"></i></p>
+              <h6 class="font-weight-600">Fully Responsive</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-calendar-plus-o text-primary"></i></p>
+              <h6 class="font-weight-600">Add to calendar buttons</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-facebook-official text-primary"></i> <i class="fa fa-twitter text-primary"></i> <i class="fa fa-linkedin text-primary"></i> <i class="fa fa-whatsapp text-primary"></i></p>
+              <h6 class="font-weight-600">Social share</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-external-link text-primary"></i></p>
+              <h6 class="font-weight-600">Link to your event page</h6>
+              <p>EventBrite, Meetups.</p>
+            </div>
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-cogs text-primary"></i></p>
+              <h6 class="font-weight-600">Customize settings</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-4 feature-2">
+              <p class="feature-icon"><i class="fa fa-life-ring text-primary"></i></p>
+              <h6 class="font-weight-600">Support</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section bg-gray">
+        <div class="container">
+          <header class="section-header font-weight-500">
+            <small>Premium features</small>
+            <h4 class="font-weight-600 text-muted">Premium features - Coming soon</h4>
+          </header>
+          <div class="row gap-y">
+
+            <div class="col-md-3 feature-2">
+              <p class="feature-icon"><i class="fa fa-cogs text-muted"></i></p>
+              <h6 class="font-weight-600 text-muted">Fully Customizable</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-3 feature-2 text-muted">
+              <p class="feature-icon"><i class="fa fa-bell text-muted"></i></p>
+              <h6 class="font-weight-600 text-muted">Notifications</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-3 feature-2 text-muted">
+              <p class="feature-icon"><i class="fa fa-rss text-muted"></i></p>
+              <h6 class="font-weight-600 text-muted">Follow calendar</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+            <div class="col-md-3 feature-2">
+              <p class="feature-icon"><i class="fa fa-users text-muted"></i></p>
+              <h6 class="font-weight-600 text-muted">User collaboration</h6>
+              <p>Option as can distributors. And to suppliers, given a copy the horrible arrange yes, we had hundreds leave was more.</p>
+            </div>
+
+          </div>
+          <p class="mt-7">
+            <a class="text-uppercase fw-600 ls-2 small-2" href="#">Stay updated about premium features <i class="ti-arrow-right fs-10 ml-1"></i></a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section py-7 bg-info text-white" style="background-image: linear-gradient(to right, #764ba2 0%, #f80759 100%);">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+              <h4>Create your first calendar</h4>
+              <p class="lead">Try it yourself for free. No credit card required.</p>
+
+            </div>
+
+            <div class="col-md-auto ml-auto text-center text-md-right">
+                <a class="btn btn-round btn-lg btn-white mb-2" href="https://app.timeshake.io/users/signup">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-gray" id="section-pricing">
+        <div class="container">
+            <header class="section-header font-weight-500">
+                <small>Pricing</small>
+                <h2 class="font-weight-700">Pricing guide</h2>
+            </header>
+          <div class="row gap-y align-items-center">
+
+            <div class="col-md-4">
+              <h3 class="font-weight-700">Settle in for free and upgrade once your business is ready.</h3>
+
+              <p class="lead">Our pricing is fair: you'll only pay when your business needs more value out of timeshake.</p>
+            </div>
+
+
+            <div class="col-md-7 ml-auto">
+              <div class="row gap-y">
+
+                <div class="col-md-6">
+                  <div class="card text-center shadow-1 hover-shadow-9 py-6">
+                    <div class="d-flex align-items-center">
+                      <div class="position-relative w-100">
+                        <p class="lead text-dark text-uppercase fw-600 ls-1 mb-0">Free</p>
+                        <p> Monthly package</p>
+                      </div>
+                    </div>
+                    <div class="card-body py-6">
+                      <p class="lead-7 fw-600 text-dark">
+                        <span>$0</span>
+                      </p>
+                      <p>
+                         Unlimited calendars<br>
+                        + Unlimited events<br>
+                        + Basic features<br>
+                        + Standard support<br>
+                          <br><br><br>
+                      </p>
+                        <br>
+                        <br>
+                        <div>
+                        <a class="btn btn-round btn-outline-info w-200" href="#" >Sign up</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card text-center shadow-1 hover-shadow-9 py-6">
+                    <div class="d-flex align-items-center" >
+                      <div class="position-relative w-100">
+                          <p class="lead text-dark text-uppercase fw-600 ls-1 mb-0">Standard</p>
+                          <p>Monthly package</p>
+                      </div>
+                    </div>
+                    <div class="card-body py-6">
+                      <p class="lead-7 fw-600 text-dark">
+                        <span>$19.</span><span class="lead-4 align-text-top">99</span>
+                      </p>
+                      <p>
+                        All free features<br>
+                        + Fully customizable<br>
+                        + Notifications <br>
+                        + Follow calendar<br>
+                        + User collaboration<br>
+                        + No timeshake branding<br>
+                        + Priority support<br>
+                      </p>
+                      <br>
+                      <div>
+                        <strong>Coming soon !</strong>
+                        <a class="btn btn-round btn-secondary w-200" href="#">keep me updated</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="section-faq">
+        <div class="container">
+          <header class="section-header">
+            <small>FAQ</small>
+            <h2 class="font-weight-800">Questions about timeshake calendars?</h2>
+            <p class="lead">Use the chat on the bottom right or <a href="https://goo.gl/forms/H4yn4Zr9o0KWdKUp2" target="_blank">send us a message</a>, and a friendly staff member will get back to you as soon as possible. Here are the most frequently asked questions:</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-md-6 col-xl-4">
+              <h5>What is timeshake?</h5>
+              <p>Online calendars are often not really engaging their audience - timeshake calendars fix that. <br/> Designed with the user in mind, with "add to calendar" buttons and social sharing at their core, they are easy too use and to look at. They are made for being shared, via simple standalone links or embedding in any website or platform.</p>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <h5>Can I create calendars for free?</h5>
+              <p>Absolutely! Timeshake is totally free because it is currently still in beta and under development.<br/> When the beta ends, timeshake will have paid plans that unlock extra features not available to free users. You will soon be able to upgrade to a paid plan with premium features, but we will always provide a free plan for the basic features that are currently available.</p>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <h5>Can I customize my calendar?</h5>
+              <p>Currently, you can choose from a variety of display settings, but cannot change colors, fonts or backgrounds. <br/>We designed a minimalist and clean calendar that can blend seamlessly in almost any context, and are working hard on a full customization tool, that will be available as a part of the paid plan.</p>
+                <div class="text-uppercase text-info fw-600 ls-2 small-2" href="#">Tell me when it's ready<i class="ti-arrow-right fs-10 ml-1"></i></div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <h5>Can I request features that my business needs?</h5>
+              <p>Please do! We are impatient to hear about what would make your life easier and help your business grow. <br/>We value your feedback a lot and use it to make a better product, so yes, tell us what you need.</p>
+                <a class="text-uppercase text-info fw-600 ls-2 small-2" href="https://goo.gl/forms/H4yn4Zr9o0KWdKUp2" target="_blank">Request a feature<i class="ti-arrow-right fs-10 ml-1"></i></a>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <h5>What can I do with timeshake?</h5>
+              <p>Timeshake enables you to create, share and embed online calendars. <br/> Here are some of the most popular things business need calendars for: gym classes, corporate events, intranet communication, training sessions planning, community events, city programs, school timetables, conferences, alumni events, seminars, cultural programs, sports games, non-profits, etc.
+              </p>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <h5>Who is behind timeshake?</h5>
+              <p>Timeshake was founded by <a href="http://lenafaure.com">Léna Faure</a>, a French developer who simply got tired of having to code yet another calendar from scratch for a client's website. <br/>To have the clean and minimalist - styled calendar we wanted, we developed this first version of timeshake, that now lets everyone create and share engaging calendars in minutes.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer py-7">
+      <div class="container">
+        <div class="row gap-y">
+
+          <div class="col-md-6 col-xl-4">
+            <p><a href="#"><img class="logo-dark" src="data:image/png;base64,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" alt="logo"></a></p>
+            <p>Timeshake is an online calendar builder. Our mission is to help grow your business by providing calendars that deeply engage your audience.</p>
+          </div>
+
+            <div class="col-xl-1"></div>
+
+          <div class="col-6 col-md-3 col-xl-2">
+            <h6 class="mb-4 mt-1"><strong>Product</strong></h6>
+            <div class="nav flex-column">
+              <a class="nav-link" href="#section-features">Features</a>
+              <a class="nav-link" href="#section-pricing">Pricing</a>
+              <a class="nav-link" href="https://app.timeshake.io/calendar/tech-week-paris" target="_blank">Demo</a>
+            </div>
+          </div>
+
+        <div class="col-6 col-md-3 col-xl-2">
+            <h6 class="mb-4 mt-1"><strong>Support</strong></h6>
+            <div class="nav flex-column">
+                <a class="nav-link" href="https://goo.gl/forms/H4yn4Zr9o0KWdKUp2" target="_blank">Contact us</a>
+                <a class="nav-link" href="#section-faq">Faq</a>
+            </div>
+        </div>
+
+
+          <div class="col-6 col-md-6 col-xl-3 text-center">
+            <p><a class="btn btn-block btn-round btn-outline-info" href="https://goo.gl/forms/H4yn4Zr9o0KWdKUp2" target="_blank">Request a feature</a></p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+
+  </body>
+</html>
